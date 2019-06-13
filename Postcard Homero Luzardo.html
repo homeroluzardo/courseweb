@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Postcard</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		body{
+			background-color: black;
+		}
+
+		.postcard{
+			background-color: white;
+			width: 524px;
+			height: 374px;
+			position: absolute;
+  			top:50%;
+  			left: 50%;
+  			transform: translate(-50%,-50%);
+		}
+
+		.postheader{
+			font-family: 'Handlee', cursive;
+			position: absolute;
+			padding-left: 10px;
+		}
+
+		.logo{
+			text-align: right;
+			padding-right: 10px;
+			padding-top: 10px;
+		}
+
+		.contenedor{
+			overflow: auto;
+			float: left;
+			width: 50%;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-family: 'Handlee', cursive;
+			font-size: 22px;
+			line-height: 1.1em;
+		}
+
+		.formulario{
+			width: 45%;
+			float: right;
+		}
+
+		footer{
+			position: absolute;
+  			bottom: 0;
+  			width: 100%;
+  			height: 4.5rem;  
+		}
+
+		#formpost{
+			margin-top: 20px;
+		}
+
+		::-webkit-input-placeholder {
+  			font-family: 'Handlee', cursive;
+  			font-size: 20px;
+  		}
+
+  		input[type=text] {
+  		width: 90%;
+  		height: 22px;
+  		font-size: 20px;
+  		font-family: 'Handlee', cursive;
+  		outline: 0;
+  		border-width: 0 0 1px;
+  		border-color: black;
+  		margin-bottom: 10px;
+		}
+
+		input[type=email] {
+  		width: 90%;
+  		height: 22px;
+  		font-size: 20px;
+  		font-family: 'Handlee', cursive;
+  		outline: 0;
+  		border-width: 0 0 1px;
+  		border-color: black;
+  		margin-bottom: 10px;
+		}
+
+		#iconame{
+			background: white url(https://img.icons8.com/ios/25/000000/name.png) right no-repeat;
+		}
+
+		#icoemail{
+			background: white url(https://img.icons8.com/ios/25/000000/secured-letter.png) right no-repeat;
+		}
+
+		input[type=submit] {
+    	background: #C0C0C0; 
+    	font-family: 'Handlee', cursive;
+    	font-size: 20px;
+    	border-bottom: 1px solid black;
+    }
+
+    	.boton{
+		position: absolute; 
+		bottom: 0%; 
+		width: 100%;
+		height: 4.5rem;
+		text-align: center;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div class="postcard">
+	
+	<div class="postheader">
+		<h1>My Postcard</h1>		
+	</div>
+
+	<div class="logo">
+		<img src="http://assets.breatheco.de/apis/img/icon/4geeks.png" width="60"></img>
+	</div>
+
+	<div class="contenedor">
+		<article>
+			<p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my 4Geeks Academy Course!<br><br>This is so cool, can't wait to start doing more stuff!</p>
+		</article>
+	</div>
+
+	<div class="formulario">
+		<form method="POST" action="https://formspree.io/homeroeluzardo@gmail.com" id="formpost">
+			<input type="text" name="name" placeholder="Some Name" id="iconame" required>
+			<input type="email" name="email" placeholder="Some Email" id="icoemail" required>
+			<input type="text" name="message" placeholder="Some comment" required>
+		</form>
+	</div>
+
+	<div class="boton">
+		<input type="submit" form="formpost" name="Send" value="Send My Postcard">
+	</div>
+
+</div>
+
+</body>
+</html>
+
